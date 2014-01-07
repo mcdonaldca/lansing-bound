@@ -1,0 +1,14 @@
+/* Style sheet compiled using Sass */
+
+// Define variables
+
+@import "_variables.scss";
+@import "_mixins.scss";
+
+// Global rules
+
+@import "_globals.scss";
+
+// Page rules
+
+@import "pages/_index.scss";
