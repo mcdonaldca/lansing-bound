@@ -1,4 +1,33 @@
 //------------------------------
+//	NEED JAVASCRIPT
+//------------------------------
+
+#need-js {
+	z-index: 20;
+	background: rgba(0, 0, 0, .7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	
+}
+
+#js-error-text {
+	text-align: center;
+	font: 2em $roboto-stack;
+	color: white;
+
+	width: 100%;
+	height: 3em;
+	margin-top: 4em;
+}
+
+
+
+
+//------------------------------
 //	MAP STYLES
 //------------------------------
 
@@ -42,87 +71,94 @@
 			font-weight: 400;
 		}
 	}
+}
 
-	.option {
-		width: 85%;
-		margin: .75em 5%;
-		padding: .2em 0 .2em 5%;
 
-		color: white;
-		font: 1.4em $titillium-stack;
-		font-weight: 200;
-		letter-spacing: .02em;
 
-		.icon {
-			font-size: .9em;
-		}
 
-		&.event {
+//------------------------------
+//	OPTION SELECTORS 
+//------------------------------
 
-			&.music {
-				background: $blue;
-				&:hover {
-					background: $blue-mid;
-				}
-			}
+.option {
+	width: 85%;
+	margin: .75em 5%;
+	padding: .2em 0 .2em 5%;
 
-			&.food {
-				background: $orange;
-				&:hover {
-					background: $orange-mid;
-				}
-			}
+	color: white;
+	font: 1.4em $titillium-stack;
+	font-weight: 200;
+	letter-spacing: .02em;
 
-			&.art {
-				background: $green;
-				&:hover {
-					background: $green-mid;
-				}
-			}
-
-			&.events {
-				background: $purple;
-				&:hover {
-					background: $purple-mid;
-				}
-			}
-
-			&.festivals {
-				background: $pink;
-				&:hover {
-					background: $pink-mid;
-				}
-			}
-
-			&.parks {
-				background: $yellow;
-				&:hover {
-					background: $yellow-mid;
-				}
-			}
-			
-			&.disabled {
-				background: $dark-gray;
-			}
-
-		}
-
-		&.location {
-
-			&.disabled {
-				background: $dark-gray;
-			}
-			
-			background: $theme;
-
-			&:hover {
-				background: $theme-mid;
-			}
-
-			
-			
-		}	
+	.icon {
+		font-size: .9em;
 	}
+
+	&.event {
+
+		&.music {
+			background: $blue;
+			&:hover {
+				background: $blue-mid;
+			}
+		}
+
+		&.food {
+			background: $orange;
+			&:hover {
+				background: $orange-mid;
+			}
+		}
+
+		&.art {
+			background: $green;
+			&:hover {
+				background: $green-mid;
+			}
+		}
+
+		&.events {
+			background: $purple;
+			&:hover {
+				background: $purple-mid;
+			}
+		}
+
+		&.festivals {
+			background: $pink;
+			&:hover {
+				background: $pink-mid;
+			}
+		}
+
+		&.parks {
+			background: $yellow;
+			&:hover {
+				background: $yellow-mid;
+			}
+		}
+		
+		&.disabled {
+			background: $dark-gray;
+		}
+
+	}
+
+	&.location {
+
+		&.disabled {
+			background: $dark-gray;
+		}
+		
+		background: $theme;
+
+		&:hover {
+			background: $theme-mid;
+		}
+
+		
+		
+	}	
 }
 
 

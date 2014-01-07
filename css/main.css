@@ -54,6 +54,23 @@ html, body {
       .navbar ul a:hover {
         color: #CCC; }
 
+#need-js {
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#js-error-text {
+  text-align: center;
+  font: 2em "Roboto Slab", Georgia, serif;
+  color: white;
+  width: 100%;
+  height: 3em;
+  margin-top: 4em; }
+
 #map-canvas {
   margin-top: 3.6em;
   height: 100%;
@@ -79,48 +96,49 @@ html, body {
       color: white;
       font: 1em "Titillium Web", Tahoma, sans-serif;
       font-weight: 400; }
-  .sidebar .option {
-    width: 85%;
-    margin: .75em 5%;
-    padding: .2em 0 .2em 5%;
-    color: white;
-    font: 1.4em "Titillium Web", Tahoma, sans-serif;
-    font-weight: 200;
-    letter-spacing: .02em; }
-    .sidebar .option .icon {
-      font-size: .9em; }
-    .sidebar .option.event.music {
-      background: #4faee2; }
-      .sidebar .option.event.music:hover {
-        background: #4d7a94; }
-    .sidebar .option.event.food {
-      background: #f47f49; }
-      .sidebar .option.event.food:hover {
-        background: #a06347; }
-    .sidebar .option.event.art {
-      background: #2fac4a; }
-      .sidebar .option.event.art:hover {
-        background: #3d7948; }
-    .sidebar .option.event.events {
-      background: #704d9f; }
-      .sidebar .option.event.events:hover {
-        background: #5e4a72; }
-    .sidebar .option.event.festivals {
-      background: #f27179; }
-      .sidebar .option.event.festivals:hover {
-        background: #9f5c5f; }
-    .sidebar .option.event.parks {
-      background: #fbb251; }
-      .sidebar .option.event.parks:hover {
-        background: #a37c4b; }
-    .sidebar .option.event.disabled {
+
+.option {
+  width: 85%;
+  margin: .75em 5%;
+  padding: .2em 0 .2em 5%;
+  color: white;
+  font: 1.4em "Titillium Web", Tahoma, sans-serif;
+  font-weight: 200;
+  letter-spacing: .02em; }
+  .option .icon {
+    font-size: .9em; }
+  .option.event.music {
+    background: #4faee2; }
+    .option.event.music:hover {
+      background: #4d7a94; }
+  .option.event.food {
+    background: #f47f49; }
+    .option.event.food:hover {
+      background: #a06347; }
+  .option.event.art {
+    background: #2fac4a; }
+    .option.event.art:hover {
+      background: #3d7948; }
+  .option.event.events {
+    background: #704d9f; }
+    .option.event.events:hover {
+      background: #5e4a72; }
+  .option.event.festivals {
+    background: #f27179; }
+    .option.event.festivals:hover {
+      background: #9f5c5f; }
+  .option.event.parks {
+    background: #fbb251; }
+    .option.event.parks:hover {
+      background: #a37c4b; }
+  .option.event.disabled {
+    background: #4b4645; }
+  .option.location {
+    background: #52c0ab; }
+    .option.location.disabled {
       background: #4b4645; }
-    .sidebar .option.location {
-      background: #52c0ab; }
-      .sidebar .option.location.disabled {
-        background: #4b4645; }
-      .sidebar .option.location:hover {
-        background: #4f8378; }
+    .option.location:hover {
+      background: #4f8378; }
 
 .icon-music:before {
   content: "\e601"; }

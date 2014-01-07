@@ -25,7 +25,7 @@ function updateMap(latitude, longitude) {
 };
 
 // Initialize the map to point at Lansing, MI
-var initialize = updateMap(42.732535, 84.555535);
+var initialize = updateMap(42.732535, -84.555535);
 google.maps.event.addDomListener(window, 'load', initialize);
 
 // Toggle colors for disabled even types
