@@ -70,9 +70,9 @@ html, body {
     overflow: hidden;
     background: #7a7270;
     width: 100%;
-    margin: 1em 0; }
+    margin: .75em 0; }
     .sidebar .header.first {
-      margin: 0 0 1em 0; }
+      margin: 0 0 .75em 0; }
     .sidebar .header .text {
       width: 100%;
       margin: 0 0 0 1em;
@@ -81,11 +81,14 @@ html, body {
       font-weight: 400; }
   .sidebar .option {
     width: 85%;
-    margin: 1em 5%;
-    padding: .3em 0 .3em 5%;
+    margin: .75em 5%;
+    padding: .2em 0 .2em 5%;
     color: white;
-    font: 1.1em "Titillium Web", Tahoma, sans-serif;
-    font-weight: 400; }
+    font: 1.4em "Titillium Web", Tahoma, sans-serif;
+    font-weight: 200;
+    letter-spacing: .02em; }
+    .sidebar .option .icon {
+      font-size: .9em; }
     .sidebar .option.event.music {
       background: #4faee2; }
       .sidebar .option.event.music:hover {
@@ -114,7 +117,28 @@ html, body {
       background: #4b4645; }
     .sidebar .option.location {
       background: #52c0ab; }
-      .sidebar .option.location:hover {
-        background: #4f8378; }
       .sidebar .option.location.disabled {
         background: #4b4645; }
+      .sidebar .option.location:hover {
+        background: #4f8378; }
+
+.icon-music:before {
+  content: "\e601"; }
+
+.icon-food:before {
+  content: "\e603"; }
+
+.icon-events:before {
+  content: "\e605"; }
+
+.icon-festivals:before {
+  content: "\e604"; }
+
+.icon-art:before {
+  content: "\e020"; }
+
+.icon-parks:before {
+  content: "\e606"; }
+
+.icon-pin:before {
+  content: "\e602"; }
