@@ -9,6 +9,12 @@ function initialize() {
                   { "saturation": -100 },
                   { "lightness": -17 }
                 ]
+              },{
+                "featureType": "water",
+                "stylers": [
+                  { "hue": "#52C0AB" },
+                  { "saturation": 50 }
+                ]
               }
             ]
   };
@@ -16,3 +22,7 @@ function initialize() {
       mapOptions);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$(".option").click(function () {
+  $(this).toggleClass("disabled");
+});

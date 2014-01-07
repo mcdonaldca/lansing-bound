@@ -26,10 +26,23 @@
     </div>
   </div>
 
+  <div class="sidebar">
+    <div class="header first"><div class="text">EVENTS</div></div>
+    <div class="option event music">MUSIC</div>
+    <div class="option event food">FOOD</div>
+    <div class="option event art">ART</div>
+    <div class="option event events">EVENTS</div>
+    <div class="option event festivals">FESTIVALS</div>
+    <div class="option event parks">PARKS</div>
+    <div class="header"><div class="text">LOCATIONS</div></div>
+    <div class="option location lansing">LANSING</div>
+    <div class="option location east-lansing">EAST LANSING</div>
+  </div>
   <div id="map-canvas"></div>
 
 
-  <div class="need-js">
+
+  <div id="need-js">
     Our apologies for the inconvenience.
     You need JavaScript enabled to use this website.
   </div>
@@ -38,6 +51,9 @@
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjwcHpoZbsQJ5tubboxrL59gSRILxF_iQ&sensor=false"></script>
   <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript">
+    $("#need-js").hide();
+  </script>
  </body>
 
 </html>

@@ -19,7 +19,8 @@
 
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 95%;
+  background: #7a7270; }
 
 .navbar {
   position: fixed;
@@ -36,7 +37,7 @@ html, body {
   background-image: linear-gradient(to bottom, #595352, #3d3938); }
   .navbar .trademark {
     height: 3em;
-    margin: .1em 0 0 2em; }
+    margin: .3em 0 0 2em; }
   .navbar .header-icon {
     display: none; }
   .navbar ul {
@@ -57,3 +58,63 @@ html, body {
   margin-top: 3.6em;
   height: 100%;
   width: 75%; }
+
+.sidebar {
+  width: 25%;
+  background: #4b4645;
+  scroll: auto;
+  min-height: 100%;
+  max-height: 100%;
+  float: right; }
+  .sidebar .header {
+    overflow: hidden;
+    background: #7a7270;
+    width: 100%;
+    margin: 1em 0; }
+    .sidebar .header.first {
+      margin: 0 0 1em 0; }
+    .sidebar .header .text {
+      width: 100%;
+      margin: 0 0 0 1em;
+      color: white;
+      font: 1em "Titillium Web", Tahoma, sans-serif;
+      font-weight: 400; }
+  .sidebar .option {
+    width: 85%;
+    margin: 1em 5%;
+    padding: .3em 0 .3em 5%;
+    color: white;
+    font: 1.1em "Titillium Web", Tahoma, sans-serif;
+    font-weight: 400; }
+    .sidebar .option.event.music {
+      background: #4faee2; }
+      .sidebar .option.event.music:hover {
+        background: #4d7a94; }
+    .sidebar .option.event.food {
+      background: #f47f49; }
+      .sidebar .option.event.food:hover {
+        background: #a06347; }
+    .sidebar .option.event.art {
+      background: #2fac4a; }
+      .sidebar .option.event.art:hover {
+        background: #3d7948; }
+    .sidebar .option.event.events {
+      background: #704d9f; }
+      .sidebar .option.event.events:hover {
+        background: #5e4a72; }
+    .sidebar .option.event.festivals {
+      background: #f27179; }
+      .sidebar .option.event.festivals:hover {
+        background: #9f5c5f; }
+    .sidebar .option.event.parks {
+      background: #fbb251; }
+      .sidebar .option.event.parks:hover {
+        background: #a37c4b; }
+    .sidebar .option.event.disabled {
+      background: #4b4645; }
+    .sidebar .option.location {
+      background: #52c0ab; }
+      .sidebar .option.location:hover {
+        background: #4f8378; }
+      .sidebar .option.location.disabled {
+        background: #4b4645; }

@@ -14,3 +14,111 @@
 //------------------------------
 //	SIDEBAR STYLES
 //------------------------------
+
+.sidebar {
+	width: 25%;
+	background: $dark-gray;
+	scroll: auto;
+	min-height: 100%;
+	max-height: 100%;
+	float: right;
+
+	.header {
+		overflow: hidden;
+		background: $light-gray;
+		width: 100%;
+		margin: 1em 0;
+
+		&.first {
+			margin: 0 0 1em 0;
+		}
+
+		.text {
+			width: 100%;
+			margin: 0 0 0 1em;
+
+			color: white;
+			font: 1em $titillium-stack;
+			font-weight: 400;
+		}
+	}
+
+	.option {
+		width: 85%;
+		margin: 1em 5%;
+		padding: .3em 0 .3em 5%;
+
+		color: white;
+		font: 1.1em $titillium-stack;
+		font-weight: 400;
+
+		
+
+		&.event {
+
+			&.music {
+				background: $blue;
+				&:hover {
+					background: $blue-mid;
+				}
+			}
+
+			&.food {
+				background: $orange;
+				&:hover {
+					background: $orange-mid;
+				}
+			}
+
+			&.art {
+				background: $green;
+				&:hover {
+					background: $green-mid;
+				}
+			}
+
+			&.events {
+				background: $purple;
+				&:hover {
+					background: $purple-mid;
+				}
+			}
+
+			&.festivals {
+				background: $pink;
+				&:hover {
+					background: $pink-mid;
+				}
+			}
+
+			&.parks {
+				background: $yellow;
+				&:hover {
+					background: $yellow-mid;
+				}
+			}
+			
+			&.disabled {
+				background: $dark-gray;
+			}
+
+		}
+
+		&.location {
+			background: $theme;
+
+			&:hover {
+				background: $theme-mid;
+			}
+
+			&.disabled {
+				background: $dark-gray;
+			}
+			
+		}
+
+		
+
+		
+	}
+}
