@@ -2,4 +2,5 @@
 
 .DS_Store
 .sass-cache
-assets/
+assets/ignore
+config.php
