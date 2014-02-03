@@ -4,7 +4,6 @@
  <head>
   <title>Lansing Bound</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <link rel="icon" type="image/png" href="img/favicon.png">
   <!-- CSS -->
   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,700|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
@@ -17,45 +16,54 @@
     <div class="navbar-inner">
       <a class="brand" href="index.html"><img class="trademark" src="img/trademark.png" ></a>
       <a class="brand" href="index.html"><img class="header-icon" src="img/icon.png" ></a>
-      <ul class='nav-links'>
-        <li><a href="#">Video</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
     </div>
   </div>
 
   <div class="sidebar">
-    <div class="header first"><div class="text">EVENTS</div></div>
-    <div class="option event music"><span class="icon icon-music"></span>&nbsp;&nbsp;MUSIC</div>
-    <div class="option event food"><span class="icon icon-food"></span>&nbsp;&nbsp;FOOD</div>
-    <div class="option event art"><span class="icon icon-art"></span>&nbsp;&nbsp;ART</div>
-    <div class="option event events"><span class="icon icon-events"></span>&nbsp;&nbsp;EVENTS</div>
-    <div class="option event festivals"><span class="icon icon-festivals"></span>&nbsp;&nbsp;FESTIVALS</div>
-    <div class="option event parks"><span class="icon icon-parks"></span>&nbsp;&nbsp;PARKS</div>
-    <div class="header"><div class="text">LOCATIONS</div></div>
-    <div class="option location lansing"><span class="icon icon-pin"></span>&nbsp;&nbsp;LANSING</div>
-    <div class="option location east-lansing disabled"><span class="icon icon-pin"></span>&nbsp;&nbsp;EAST LANSING</div>
+    <div class="filters">
+      <div class="header first"><div class="text">EVENTS</div></div>
+      <div class="option event music"><span class="icon icon-music"></span>&nbsp;&nbsp;<br>MUSIC</div>
+      <div class="option event food"><span class="icon icon-food"></span>&nbsp;&nbsp;<br>FOOD</div>
+      <div class="option event art"><span class="icon icon-art"></span>&nbsp;&nbsp;<br>ART</div>
+      <div class="option event events"><span class="icon icon-events"></span>&nbsp;&nbsp;<br>EVENTS</div>
+      <div class="option event festivals"><span class="icon icon-festivals"></span>&nbsp;&nbsp;<br>FESTIVALS</div>
+      <div class="option event parks"><span class="icon icon-parks"></span>&nbsp;&nbsp;<br>PARKS</div>
+    </div>
+    
+    <div class="locations">
+      <div class="header"><div class="text">LOCATIONS</div></div>
+      <div class="option location lansing"><span class="icon icon-pin"></span>&nbsp;&nbsp;LANSING</div>
+      <div class="option location east-lansing disabled"><span class="icon icon-pin"></span>&nbsp;&nbsp;EAST LANSING</div>
+    </div>
   </div>
+
   <div id="map-canvas"></div>
 
 
+  <div id="db-info">
+  </div>
 
-  <div id="need-js">
+
+  <div id="back-drop">
     <div id="js-error-text">
       Our apologies for the inconvenience.<br>
       You need JavaScript enabled to use this website.
+    </div>
+    <div id="feature">
+      
     </div>
   </div>
 
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjwcHpoZbsQJ5tubboxrL59gSRILxF_iQ&sensor=false"></script>
-  <script type="text/javascript" src="js/map.js"></script>
-  <script type="text/javascript">
-    $("#need-js").hide();
+  <script>
+    
+
+    
   </script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjwcHpoZbsQJ5tubboxrL59gSRILxF_iQ&sensor=false"></script>
+  <script type "text/javascript" src="js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
  </body>
 
 </html>
